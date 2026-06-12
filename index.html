@@ -7,6 +7,8 @@
     <title>Cards Toggle</title>
 </head>
 <body>
+    <section id="inicial" class="inicial">
+        <h1>Paisagens</h1>
     <div class="card" id="card1">
         <img src="https://toptripadventure.com.br/wp-content/uploads/2020/01/pontaGrossa.jpg" alt="">
         <h2>Buraco do padre</h2>
@@ -16,21 +18,20 @@
         <img src="https://grupocataratas.com/wp-content/uploads/2020/07/FOTOS_PN_CATARATAS_00007-scaled.jpg" alt="">
         <h2>Cataratas do iguaçu</h2>
         <p>Um exelente ponto turistico em Ponta Grossa</p>
-    </div>
-    <button id="botao">Alternar</button>
+
     <script>
         cartao1 = document.getElementById("card1");
         cartao2 = document.getElementById("card2");
-        botao = document.getElementById("botao");
-        
-        cartao2.addEventListener("click", ()=>{
-            cartao1.classList.toggle("desligar");
-            cartao2.classList.toggle("desligar");
-        })
         
         cartao1.addEventListener("click", ()=>{
             cartao1.classList.toggle("desligar");
             cartao2.classList.toggle("desligar");
         })
+        
+        cartao2.addEventListener("click", ()=>{
+            cartao1.classList.toggle("desligar");
+            cartao2.classList.toggle("desligar");
+        })
     </script>
+</section>
 </html>
