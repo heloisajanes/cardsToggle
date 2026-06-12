@@ -23,7 +23,12 @@
         cartao2 = document.getElementById("card2");
         botao = document.getElementById("botao");
         
-        botao.addEventListener("click", ()=>{
+        cartao2.addEventListener("click", ()=>{
+            cartao1.classList.toggle("desligar");
+            cartao2.classList.toggle("desligar");
+        })
+        
+        cartao1.addEventListener("click", ()=>{
             cartao1.classList.toggle("desligar");
             cartao2.classList.toggle("desligar");
         })
